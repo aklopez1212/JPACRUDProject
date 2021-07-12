@@ -36,6 +36,13 @@
 
 
 <h1>You there! You're finally awake...</h1>
+
+<h3>Find Character By ID</h3>
+	<form action="find.do" method="GET">
+		Character ID: <input type="text" name="id" /> <input type="submit"
+			value="Get Character" />
+	</form>
+
 <a href="create">Create A Character</a>
 <!-- <a href="list.do">See All Characters</a> -->
 

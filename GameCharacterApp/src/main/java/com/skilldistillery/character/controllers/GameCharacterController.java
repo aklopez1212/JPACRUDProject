@@ -55,6 +55,14 @@ public class GameCharacterController {
 		model.addAttribute("GameCharacter", gc);
 		return "update";
 	}
+	@RequestMapping(path="find.do")
+	public String findChar(Integer id, Model model) {
+		GameCharacter gc = dao.findById(id);
+		if(gc != null) {
+			model.addAttribute("GameCharacter", gc);
+			return "success";
+		} return "failed";
+	}
 //	@RequestMapping(path="list.do")
 //	public ModelAndView showAll() {
 //		ModelAndView mv = new ModelAndView();
